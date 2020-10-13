@@ -11,6 +11,11 @@ const routes = [
     components: {
       default: home
     } 
+  },
+  {
+    path: '*',
+    name: 'catchAll',
+    component: home
   }
 ]
 

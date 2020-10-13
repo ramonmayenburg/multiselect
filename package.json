@@ -2,18 +2,23 @@
   "name": "frontend_assignment",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://ramonmayenburg.github.io/multiselect",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "-": "0.0.1",
     "@types/vuelidate": "^0.7.13",
     "axios": "^0.19.2",
     "bootstrap-vue": "^2.16.0",
     "core-js": "^3.6.4",
     "register-service-worker": "^1.6.2",
+    "save-dev": "0.0.1-security",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
     "vue-class-component": "^7.2.2",
@@ -39,10 +44,11 @@
     "@vue/cli-service": "~4.2.0",
     "@vue/eslint-config-typescript": "^5.0.1",
     "@vue/test-utils": "^1.0.3",
-    "jquery": "1.9.1",
     "bootstrap": "^4.3.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
+    "gh-pages": "^3.1.0",
+    "jquery": "1.9.1",
     "mutationobserver-shim": "^0.3.3",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.0",
@@ -51,8 +57,8 @@
     "sass-loader": "^8.0.2",
     "typescript": "~3.7.5",
     "vue-cli-plugin-bootstrap-vue": "~0.6.0",
-    "vue-template-compiler": "^2.6.11",
-    "vue-svg-loader": "^0.16.0"
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
